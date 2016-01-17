@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="yes"?>
+<Service>
+  <Service Name="nginx" Status="Running" ProcessId="6224" Type="nginx" Binfile="C:\Winginx\nginx.exe" AutoStart="true">
+    <Log>nginx: [warn] server name "https://$server_name$request_uri" has suspicious symbols in C:\Winginx/conf/nginx.conf:46
+[INFO] Запущен (процесс 6224)
+</Log>
+  </Service>
+  <Service Name="MySQL" Status="Running" ProcessId="4988" Type="Database" Binfile="C:\Winginx\mysql\mysqld.exe" AutoStart="true">
+    <Log>160116  8:54:16 [Warning] '--default-character-set' is deprecated and will be removed in a future release. Please use '--character-set-server' instead.
+160116  8:54:16 [Warning] '--skip-locking' is deprecated and will be removed in a future release. Please use '--skip-external-locking' instead.
+[INFO] Запущен (процесс 4988)
+</Log>
+  </Service>
+  <Service Name="MongoDB" Status="Running" ProcessId="6124" Type="Database" Binfile="C:\Winginx\mongodb\mongod.exe" AutoStart="true">
+    <Log>Sat Jan 16 08:54:17.249 [initandlisten] MongoDB starting : pid=6124 port=27017 dbpath=data 32-bit host=K-ПК
+Sat Jan 16 08:54:17.249 [initandlisten] 
+Sat Jan 16 08:54:17.249 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Sat Jan 16 08:54:17.249 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Sat Jan 16 08:54:17.249 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+Sat Jan 16 08:54:17.249 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Sat Jan 16 08:54:17.249 [initandlisten] 
+Sat Jan 16 08:54:17.249 [initandlisten] db version v2.4.5
+Sat Jan 16 08:54:17.249 [initandlisten] git version: a2ddc68ba7c9cee17bfe69ed840383ec3506602b
+Sat Jan 16 08:54:17.249 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=0, build=6002, platform=2, service_pack='Service Pack 2') BOOST_LIB_VERSION=1_49
+Sat Jan 16 08:54:17.249 [initandlisten] allocator: system
+Sat Jan 16 08:54:17.249 [initandlisten] options: { bind_ip: "127.0.0.1", config: "mongodb.conf", dbpath: "data", nojournal: true, port: 27017 }
+Sat Jan 16 08:54:17.329 [initandlisten] waiting for connections on port 27017
+Sat Jan 16 08:54:17.329 [websvr] admin web console waiting for connections on port 28017
+[INFO] Запущен (процесс 6124)
+</Log>
+  </Service>
+  <Service Name="Redis" Status="Running" ProcessId="6848" Type="Database" Binfile="C:\Winginx\redis\redis-server.exe" AutoStart="true">
+    <Log>[INFO] Запущен (процесс 6848)
+</Log>
+  </Service>
+  <Service Name="Memcached" Status="Running" ProcessId="6236" Type="Database" Binfile="C:\Winginx\memcached\memcached.exe" AutoStart="true">
+    <Log>[INFO] Запущен (процесс 6236)
+</Log>
+  </Service>
+  <Service Name="PHP 5.3.27" Status="Running" ProcessId="4232" Type="FastCGI" Binfile="C:\Winginx\php5\php-cgi.exe" AutoStart="true">
+    <Log>[INFO] Запущен (процесс 4232)
+</Log>
+  </Service>
+  <Service Name="PHP 5.4.25" Status="Running" ProcessId="5848" Type="FastCGI" Binfile="C:\Winginx\php54\php-cgi.exe" AutoStart="true">
+    <Log>[INFO] Запущен (процесс 5848)
+</Log>
+  </Service>
+</Service>
